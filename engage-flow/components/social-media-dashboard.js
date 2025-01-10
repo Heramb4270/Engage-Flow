@@ -1,5 +1,4 @@
-'use client'
-
+"use client";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Heart, MessageCircle, Share2 } from "lucide-react"
@@ -7,8 +6,6 @@ import { useState } from "react"
 import DateRangePicker from "./date-range-picker"
 import sampleData from "../social_media_data.json"
 
-
-// Engagement Stats Component
 const TotalEngagement = ({ data }) => {
   const totals = data.reduce((acc, post) => ({
     likes: parseInt(acc.likes) + parseInt(post.likes),
@@ -39,7 +36,6 @@ const TotalEngagement = ({ data }) => {
   );
 };
 
-// Post Type Distribution Component remains the same
 const PostTypeDistribution = ({ data }) => {
   const distribution = data.reduce((acc, post) => {
     acc[post.type] = (acc[post.type] || 0) + 1;
@@ -66,7 +62,6 @@ const PostTypeDistribution = ({ data }) => {
   );
 };
 
-// Engagement Table Component
 const EngagementTable = ({ data }) => {
   return (
     <div className="overflow-x-auto">
@@ -113,22 +108,19 @@ const EngagementTable = ({ data }) => {
   );
 };
 
-// Rest of the components remain the same...
-// DateRangePicker and SocialMediaDashboard components stay unchanged
-
 export function SocialMediaDashboard() {
   const [filteredData, setFilteredData] = useState(sampleData);
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8 space-y-6">
+    <div className="bg-gray-50 p-4">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Social Media Analysis Dashboard</h1>
+       
         
-        <div className="mb-6">
+        <div className="mb-4">
           <DateRangePicker />
         </div>
 
-        <Tabs defaultValue="overview" className="space-y-6">
+        <Tabs defaultValue="overview" className="space-y-4">
           <TabsList className="bg-white p-1 rounded-lg border border-gray-200">
             <TabsTrigger 
               value="overview"
@@ -144,7 +136,7 @@ export function SocialMediaDashboard() {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="overview" className="space-y-6">
+          <TabsContent value="overview" className="space-y-4">
             <TotalEngagement data={filteredData} />
             
             <Card className="bg-white">
