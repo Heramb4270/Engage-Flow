@@ -85,7 +85,7 @@ export default function Home() {
               <Link href="/analysis" className="text-gray-600 hover:text-indigo-600 transition-colors">Data Analysis</Link>
               <Link href="/chatbot" className="text-gray-600 hover:text-indigo-600 transition-colors">AI assistance</Link>
             </div>
-            <Link href="/signup" 
+            <Link href="/chatbot" 
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition-colors">
               Get Started
             </Link>
@@ -132,7 +132,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <Link
-                href="/demo"
+                href="/analysis"
                 className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 
                   text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105"
               >
