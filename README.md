@@ -45,7 +45,6 @@ By combining data analytics, AI, and intuitive workflows, EngageFlow revolutioni
 - **Langflow**: For workflow automation and GPT integration.  
 - **DataStax Astra DB**: Scalable cloud database for data storage and querying.  
 - **Python**: Backend scripting and analysis.  
-- **LangFlow**: Generating actionable insights based on engagement data.  
 
 ---
 
