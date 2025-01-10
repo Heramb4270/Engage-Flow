@@ -1,7 +1,7 @@
 "use client";
 
 import { Leaf, Wallet, Coins } from 'lucide-react'
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 // import {db} from "@/firebase/config";
 // import { collection, getDocs, query, where } from "firebase/firestore";

@@ -17,7 +17,7 @@ import {
 // import { Button } from "../components/ui/button"
 
 import Script from "next/script";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { use } from "react";
 
 export default function Home() {
