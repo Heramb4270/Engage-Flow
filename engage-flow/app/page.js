@@ -236,9 +236,9 @@ export default function Home() {
                   role: "Full Stack Developer",
                   photo: "/images/heramb.jpeg",
                   links: {
-                    linkedin: "https://linkedin.com/in/heramb-bhoodhar",
-                    github: "https://github.com/heramb-bhoodhar",
-                    twitter: "https://twitter.com/herambbhoodhar"
+                    linkedin: "https://www.linkedin.com/in/heramb-bhoodhar-a09a22225/",
+                    github: "https://github.com/Heramb4270",
+                    twitter: "https://x.com/Heramb120"
                   }
                 },
                 {
@@ -246,9 +246,9 @@ export default function Home() {
                   role: "Frontend Developer",
                   photo: "/images/bhavesh.png",
                   links: {
-                    linkedin: "https://linkedin.com/in/bhavesh-patil",
-                    github: "https://github.com/bhavesh-patil",
-                    twitter: "https://twitter.com/bhaveshpatil"
+                    linkedin: "https://www.linkedin.com/in/bhavesh-patil-b01b10254/",
+                    github: "https://github.com/bhaveshxop",
+                    twitter: "https://x.com/BhaveshNPatil"
                   }
                 },
                 {
@@ -256,9 +256,9 @@ export default function Home() {
                   role: "AI Developer",
                   photo: "/images/durvesh.jpeg",
                   links: {
-                    linkedin: "https://linkedin.com/in/durvesh-chaudhari",
-                    github: "https://github.com/durvesh-chaudhari",
-                    twitter: "https://twitter.com/durveshchaudhari"
+                    linkedin: "https://www.linkedin.com/in/durvesh-chaudhari11/",
+                    github: "https://github.com/MrDurvesh11",
+                    twitter: "https://x.com/Mr_Durvesh_001"
                   }
                 },
                 {
@@ -266,9 +266,9 @@ export default function Home() {
                   role: "Full Stack Developer",
                   photo: "/images/amey.jpeg",
                   links: {
-                    linkedin: "https://linkedin.com/in/amey-pathe",
-                    github: "https://github.com/amey-pathe",
-                    twitter: "https://twitter.com/ameypathe"
+                    linkedin: "https://www.linkedin.com/in/amey-pathe/",
+                    github: "https://github.com/ameypte",
+                    twitter: "https://x.com/amey_pathe"
                   }
                 }
               ].map((member, index) => (
