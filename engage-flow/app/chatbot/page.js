@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { Settings, Bell, PieChart, BarChart, LineChart, Users, Mic, Paperclip, Send } from 'lucide-react'
+import Navbar from '@/components/Navbar';
 
 
 
@@ -77,7 +78,7 @@ export default function AnalyticsChatbot() {
     
     <div className="flex flex-col h-screen bg-gray-50 ">
       {/* Header */}
-      
+      <Navbar />
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4" ref={scrollRef}>
