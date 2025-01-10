@@ -83,7 +83,7 @@ export default function Home() {
             <div className="hidden md:flex space-x-8">
               {/* <Link href="#features" className="text-gray-600 hover:text-indigo-600 transition-colors">Features</Link> */}
               <Link href="/analysis" className="text-gray-600 hover:text-indigo-600 transition-colors">Data Analysis</Link>
-              <Link href="#team" className="text-gray-600 hover:text-indigo-600 transition-colors">AI assistance</Link>
+              <Link href="/chatbot" className="text-gray-600 hover:text-indigo-600 transition-colors">AI assistance</Link>
             </div>
             <Link href="/signup" 
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition-colors">
