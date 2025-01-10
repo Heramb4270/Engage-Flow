@@ -81,7 +81,7 @@ export default function Home() {
               <span className="text-2xl font-bold text-gray-900">EngageFlow</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <Link href="#features" className="text-gray-600 hover:text-indigo-600 transition-colors">Features</Link>
+              {/* <Link href="#features" className="text-gray-600 hover:text-indigo-600 transition-colors">Features</Link> */}
               <Link href="/analysis" className="text-gray-600 hover:text-indigo-600 transition-colors">Data Analysis</Link>
               <Link href="#team" className="text-gray-600 hover:text-indigo-600 transition-colors">AI assistance</Link>
             </div>
