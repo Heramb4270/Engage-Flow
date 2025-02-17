@@ -6,6 +6,7 @@ export default function Footer() {
     <div className="max-w-7xl mx-auto">
       <p className="text-gray-600">
         &copy; 2021 EngageFlow. All rights reserved.
+        Made by Sarthak , Atharva , Srushti , Shrutika
       </p>
     </div>
   </footer>

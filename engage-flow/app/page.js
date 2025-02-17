@@ -7,6 +7,7 @@ import {
   Award, Clock, Shield, Heart, MessageSquare, ChartBar, Settings, Database,
   Workflow, Brain, Bot, GitBranch, Linkedin, Github, Twitter
 } from "lucide-react";
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const fadeIn = {
@@ -178,138 +179,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Analytics Dashboard Preview */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <motion.div 
-              className="bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 shadow-lg"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-4 text-gray-900">Powerful Analytics Dashboard</h2>
-                <p className="text-xl text-gray-600">Track, analyze, and optimize your social media performance</p>
-              </div>
-              
-              <div className="bg-white rounded-xl p-6 shadow-xl">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <TrendingUp className="w-8 h-8 text-green-600 mb-2" />
-                    <h4 className="text-lg font-semibold text-gray-900">Engagement Rate</h4>
-                    <p className="text-3xl font-bold text-green-600">+24.8%</p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <Users className="w-8 h-8 text-blue-600 mb-2" />
-                    <h4 className="text-lg font-semibold text-gray-900">New Followers</h4>
-                    <p className="text-3xl font-bold text-blue-600">1,482</p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <Rocket className="w-8 h-8 text-purple-600 mb-2" />
-                    <h4 className="text-lg font-semibold text-gray-900">Post Reach</h4>
-                    <p className="text-3xl font-bold text-purple-600">52.4K</p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
 
-        {/* Team Section */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-100/30">
-          <div className="max-w-7xl mx-auto">
-            <motion.div
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl font-bold mb-4 text-gray-900">Meet Our Team</h2>
-              <p className="text-xl text-gray-600">The innovators behind EngageFlow</p>
-            </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              {[
-                {
-                  name: "Heramb Bhoodhar",
-                  role: "Full Stack Developer",
-                  photo: "/images/heramb.jpeg",
-                  links: {
-                    linkedin: "https://www.linkedin.com/in/heramb-bhoodhar-a09a22225/",
-                    github: "https://github.com/Heramb4270",
-                    twitter: "https://x.com/Heramb120"
-                  }
-                },
-                {
-                  name: "Bhavesh Patil",
-                  role: "Frontend Developer",
-                  photo: "/images/bhavesh.png",
-                  links: {
-                    linkedin: "https://www.linkedin.com/in/bhavesh-patil-b01b10254/",
-                    github: "https://github.com/bhaveshxop",
-                    twitter: "https://x.com/BhaveshNPatil"
-                  }
-                },
-                {
-                  name: "Durvesh Chaudhari",
-                  role: "AI Developer",
-                  photo: "/images/durvesh.jpeg",
-                  links: {
-                    linkedin: "https://www.linkedin.com/in/durvesh-chaudhari11/",
-                    github: "https://github.com/MrDurvesh11",
-                    twitter: "https://x.com/Mr_Durvesh_001"
-                  }
-                },
-                {
-                  name: "Amey Pathe",
-                  role: "Full Stack Developer",
-                  photo: "/images/amey.jpeg",
-                  links: {
-                    linkedin: "https://www.linkedin.com/in/amey-pathe/",
-                    github: "https://github.com/ameypte",
-                    twitter: "https://x.com/amey_pathe"
-                  }
-                }
-              ].map((member, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-white p-6 rounded-xl shadow-sm text-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gray-100">
-                    <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900">{member.name}</h3>
-                  <p className="text-gray-600 mb-4">{member.role}</p>
-                  <div className="flex justify-center space-x-4">
-                    <Link href={member.links.linkedin} className="text-gray-400 hover:text-blue-600">
-                      <Linkedin className="w-5 h-5" />
-                    </Link>
-                    <Link href={member.links.github} className="text-gray-400 hover:text-gray-900">
-                      <Github className="w-5 h-5" />
-                    </Link>
-                    <Link href={member.links.twitter} className="text-gray-400 hover:text-blue-600">
-                      <Twitter className="w-5 h-5" />
-                    </Link>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+     
 
         {/* Footer */}
-        <footer className="bg-white text-center py-8 shadow-sm">
-          <div className="max-w-7xl mx-auto">
-            <p className="text-gray-600">
-              &copy; 2021 EngageFlow. All rights reserved.
-            </p>
-          </div>
-        </footer>
+      <Footer/>
       </main>
     </div>
   );

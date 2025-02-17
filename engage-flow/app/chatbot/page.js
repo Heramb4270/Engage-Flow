@@ -9,12 +9,12 @@ import Navbar from '@/components/Navbar';
 // Utility function for API calls
 async function sendMessage(message) {
   try {
-    const response = await fetch('/api/langflow', {
+    const response = await fetch("http://localhost:5000/chatbot", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ message })
+      body: JSON.stringify({ "userPrompt":message })
       
     });
 
@@ -116,13 +116,13 @@ export default function AnalyticsChatbot() {
       </div>
 
       {/* Input */}
-      <form onSubmit={handleSendMessage} className="p-4 bg-white border-t">
+      <form onSubmit={handleSendMessage} className="p-4 bg-white border-t border-gray-200">
         <div className="flex items-end space-x-2">
           <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask about your social media analytics..."
-            className="flex-1 min-h-[80px] p-3 border rounded-lg text text-black resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className=" border-2 border-black flex-1 min-h-[80px] p-3  rounded-lg text text-black resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
             disabled={isLoading}
           />
           <div className="flex space-x-2">

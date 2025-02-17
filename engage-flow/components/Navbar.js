@@ -39,14 +39,14 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <Share2 className="w-8 h-8 text-indigo-600" />
-              <span className="text-2xl font-bold text-gray-900">EngageFlow</span>
+              <Link href="/" className="text-2xl font-bold text-gray-900">EngageFlow</Link>
             </div>
             <div className="hidden md:flex space-x-8">
-              <Link href="#features" className="text-gray-600 hover:text-indigo-600 transition-colors">Features</Link>
+              <Link href="/" className="text-gray-600 hover:text-indigo-600 transition-colors">Features</Link>
               <Link href="/analysis" className="text-gray-600 hover:text-indigo-600 transition-colors">Data Analysis</Link>
               <Link href="/chatbot" className="text-gray-600 hover:text-indigo-600 transition-colors">AI assistance</Link>
             </div>
-            <Link href="/signup" 
+            <Link href="/" 
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition-colors">
               Get Started
             </Link>
